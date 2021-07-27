@@ -1,6 +1,6 @@
 # Evaluation of structures of transmembrane proteins predicted by AlphaFold2
 
-##Steps of evaluation
+## Steps of evaluation
 
 1. Download structures from EBI
    >wget -c -q 'https://ftp.ebi.ac.uk/pub/databases/alphafold/UP000005640_9606_HUMAN.tar'
@@ -9,10 +9,10 @@
    >tar -xvf UP000005640_9606_HUMAN.tar
 
 3. run TMDET software on all structures (see 10.1093/bioinformatics/bth340 and 10.1093/bioinformatics/bti121)(available in https://tmdet.enzim.hu)
-   >Results are stored in tmdet dir
+   >Results are stored in tmdet.tgz
 
 4. run CCTOP software (with tmFilter option) on all sequences (see doi.org/10.1093/nar/gkv451) (available in https://cctop.enzim.ttk.mta.hu)
-   >Results are stored in cctop dir
+   >Results are stored in cctop.tgz
 
 5. get topologies from each corresponding cctop and tmdet file if cctop predicts transmembrane protein (transmembrane="yes")
    >Results are stored in results.csv 
@@ -58,3 +58,4 @@
    | | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 
+to be continued ...
